@@ -1,9 +1,9 @@
-user = node['vhserver']['user']
+user = node['valheim']['user']
 home_dir = "/home/#{user}"
-install_dir = node['vhserver']['install_dir']
-serverfiles_dir = "#{node['vhserver']['install_dir']}/serverfiles"
-vhserver_file = "#{node['vhserver']['install_dir']}/vhserver"
-server_config = node['vhserver']['config']
+install_dir = node['valheim']['install_dir']
+serverfiles_dir = "#{node['valheim']['install_dir']}/serverfiles"
+vhserver_file = "#{node['valheim']['install_dir']}/vhserver"
+server_config = node['valheim']['config']
 
 user user do
     home home_dir

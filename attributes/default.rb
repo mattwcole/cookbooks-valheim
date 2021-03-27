@@ -1,7 +1,7 @@
-default['vhserver']['user'] = 'vhserver'
-default['vhserver']['install_dir'] = '/home/vhserver'
+default['valheim']['user'] = 'vhserver'
+default['valheim']['install_dir'] = '/home/vhserver'
 
-default['vhserver']['config']['servername'] = 'Chef Valheim'
-default['vhserver']['config']['serverpassword'] = ''
-default['vhserver']['config']['port'] = '2456'
-default['vhserver']['config']['savedir'] = '$HOME/.config/unity3d/IronGate/Valheim'
+default['valheim']['config']['servername'] = 'Chef Valheim'
+default['valheim']['config']['serverpassword'] = 'changeme'
+default['valheim']['config']['port'] = '2456'
+default['valheim']['config']['savedir'] = '$HOME/.config/unity3d/IronGate/Valheim'
