@@ -53,6 +53,10 @@ template "#{install_dir}/lgsm/config-lgsm/vhserver/vhserver.cfg" do
     notifies :restart, 'service[vhserver]', :delayed
 end
 
+directory server_config['savedir'] do
+    owner user
+end
+
 template "/etc/systemd/system/vhserver.service" do
     source 'vhserver.service.erb'
     variables(
